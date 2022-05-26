@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { Card, Button, Row, Col, Navbar, Nav, Container } from 'react-bootstrap';
+import {Button, Row, Col, Navbar, Nav, Container } from 'react-bootstrap';
 import axios from "axios";
+import styles from "./movies.modules.css";
 
 const Movies = () => {
 
@@ -31,7 +32,7 @@ const Movies = () => {
                     </Nav>
                 </Container>
             </Navbar>
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} md={3} className="g-4">
                 {
                     movies.map((movie, i) => {
                         return (
