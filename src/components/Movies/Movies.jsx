@@ -40,10 +40,10 @@ const Movies = () => {
                                 <Card className="cards" key={i}>
                                     <Card.Img className="cardImg" src={movie.image} />
                                     <Card.Body>
-                                        <Card.Title>{movie.title}</Card.Title>
-                                        <Card.Text>{movie.description.slice(0, 100) + '...'}</Card.Text>
+                                        <Card.Title className="cardTitle">{movie.title}</Card.Title>
+                                        <Card.Text className="cardText">{movie.description.slice(0, 100) + '...'}</Card.Text>
                                         <Link to={`/${movie.id}`}>
-                                            <Button variant="primary">Detalle</Button>
+                                            <Button className="boton" >Detalle</Button>
                                         </Link>
                                     </Card.Body>
                                 </Card>
